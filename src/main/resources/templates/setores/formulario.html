@@ -12,6 +12,9 @@
 
 <form th:action="@{/setores/salvar}" th:object="${setor}" method="post">
 
+    <input type="hidden" th:field="*{id}">
+    <div class="mb-3">
+
     <div class="mb-3">
         <label class="form-label">Nome do Setor:</label>
         <input type="text" th:field="*{nome}" class="form-control" placeholder="Ex: Logística" required>
