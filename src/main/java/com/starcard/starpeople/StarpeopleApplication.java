@@ -22,7 +22,7 @@ public class StarpeopleApplication {
 
             // 1. Criar objeto
             Setor novoSetor = new Setor();
-            novoSetor.setNome("Financeiro");
+            novoSetor.setNome("Recursos Humanos");
 
             // 2. Mandar repositorio salvar (INSERT NO BANCO)
             repository.save(novoSetor);

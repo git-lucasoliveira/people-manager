@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Setores</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="container mt-5">
+
+<h1>🏢 Gestão de Setores</h1>
+<hr>
+
+<table class="table table-bordered table-striped">
+    <thead class="table-dark">
+    <tr>
+        <th>ID</th>
+        <th>Nome do Setor</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="setor : ${setores}">
+        <td th:text="${setor.id}">1</td>
+        <td th:text="${setor.nome}">TI</td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
